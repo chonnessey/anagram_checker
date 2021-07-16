@@ -12,4 +12,9 @@ describe('Anagram#anagram_checker') do
     anagram2 = Anagram.new("Act", "cAt")
     expect(anagram2.anagram_checker).to(eq("These words are anagrams!"))
   end
+
+  it('will check if two words are valid by checking for vowels') do
+    anagram3 = Anagram.new("pkmn", "nmkp")
+    expect(anagram3.anagram_checker).to(eq("These words are not anagrams :( "))
+  end
 end
