@@ -15,6 +15,6 @@ describe('Anagram#anagram_checker') do
 
   it('will check if two words are valid by checking for vowels') do
     anagram3 = Anagram.new("pkmn", "nmkp")
-    expect(anagram3.anagram_checker).to(eq("These words are not anagrams :( "))
+    expect(anagram3.anagram_checker).to(eq("You need to input a real word!"))
   end
 end
