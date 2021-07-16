@@ -6,7 +6,7 @@ class Anagram
 
   def anagram_checker
     anagram_str = ""
-    if @word1.sort == @word2.sort
+    if @word1.sort.downcase == @word2.sort.downcase
       anagram_str = "These words are anagrams!"
     end
     return anagram_str
