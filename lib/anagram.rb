@@ -37,7 +37,7 @@ class Anagram
     word1_array.each do |letter|
       antigram1_array << letter.scan(/[a-zA-Z]/).to_s
       word2_array.each do |element|
-        antigram1_array << letter.scan(/[a-zA-Z]/).to_s
+        antigram1_array << element.scan(/[a-zA-Z]/).to_s
         if antigram1_array != antigram2_array
           antigram_str = "These words are an antigram!"
         else
