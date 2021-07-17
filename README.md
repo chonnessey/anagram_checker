@@ -1,11 +1,11 @@
-# Anagram vs Antigram :alien:
+# Anagram vs Antigram :a: :vs: :a:
 ## By Adrian Camacho :electric_plug:
 
 ---
 
 ### Project Description :pencil:
 
-* This project is a web application that takes two phrases from the user, compares them and determines wether or not they an anagram. 
+* This project is a web application that takes two phrases from the user, compares them and determines wether or not they are an anagram. 
 
 * It also takes the phrases and determines wether or not they are an antigram.
 ---
