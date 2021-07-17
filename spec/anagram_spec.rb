@@ -23,8 +23,8 @@ describe('Anagram#anagram_checker') do
     expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
   end
 
-  it('will check if two words are antigrams') do
-    anagram = Anagram.new("Hey", "cooL")
+  it('will check if two words are antigrams regardless of spaces and punctuation') do
+    anagram = Anagram.new("Hey hEy", "cooL CoOl")
     expect(anagram.antigram_checker).to(eq("These words are an antigram!"))
   end
 end

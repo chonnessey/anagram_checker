@@ -8,6 +8,9 @@ class Anagram
     anagram_str = ""
       if @word1.gsub(/\W/, "").split('').sort == @word2.gsub(/\W/, "").split('').sort
         anagram_str = "These words are anagrams!"
+      else
+        vowel_checker()
+        antigram_checker()
       end
     return anagram_str
   end
@@ -20,6 +23,7 @@ class Anagram
       vowel_str = "You need to input real words!"
     else
       anagram_checker()
+      antigram_checker()
     end
     return vowel_str
   end
@@ -38,6 +42,7 @@ class Anagram
           antigram_str = "These words are an antigram!"
         else
           anagram_checker()
+          vowel_checker()
         end
       end
     end
