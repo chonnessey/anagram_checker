@@ -9,7 +9,7 @@ describe('Anagram#anagram_checker') do
   end
 
   it('will check if two words are an anagram regardless of case') do
-    anagram = Anagram.new("Act", "cAt")
+    anagram = Anagram.new("AcT", "cAt")
     expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
   end
 

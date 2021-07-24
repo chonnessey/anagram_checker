@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+require('./lib/anagram.rb')
+
 puts "Enter two words or phrases to see if they are either an anagram or an antigram!"
 puts "Word(s) or Phrase One:"
 input1 = gets.chomp
