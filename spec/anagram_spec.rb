@@ -13,6 +13,12 @@ describe('Anagram#anagram_checker') do
     expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
   end
 
+  it('will check if two words are an anagram regardless of case and filter out words with no vowels') do
+    anagram = Anagram.new("BcD", "cBd")
+    anagram.vowel_checker()
+    expect(anagram.anagram_checker).to(eq("These phrases are anagrams.. but you need to input real words!"))
+  end
+
   it('will check if two words are valid by checking for vowels') do
     anagram = Anagram.new("pkmn", "nmkp")
     expect(anagram.vowel_checker).to(eq("You need to input real words!"))

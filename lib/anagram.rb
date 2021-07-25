@@ -1,16 +1,15 @@
 class Anagram
   def initialize(word1, word2)
-    @word1 = word1.downcase
-    @word2 = word2.downcase
+    @word1 = word1.downcase.gsub(/\W/, "")
+    @word2 = word2.downcase.gsub(/\W/, "")
   end
 
   def anagram_checker
     anagram_str = ""
-      if @word1.gsub(/\W/, "").split('').sort == @word2.gsub(/\W/, "").split('').sort
+      if @word1.split('').sort == @word2.split('').sort
         anagram_str = "These words are anagrams!"
-      else
-        vowel_checker()
-        antigram_checker()
+      elsif vowel_checker() == "You need to input real words!"
+        anagram_str = "These phrases are anagrams.. but you need to input real words!"
       end
     return anagram_str
   end
@@ -31,8 +30,8 @@ class Anagram
   def antigram_checker
     antigram1_array = []
     antigram2_array = []
-    word1_array = @word1.split('')
-    word2_array = @word2.split('')
+    word1_array = @word1.split('').sort
+    word2_array = @word2.split('').sort
     antigram_str = ""
     word1_array.each do |letter|
       antigram1_array << letter.scan(/[a-zA-Z]/).to_s
