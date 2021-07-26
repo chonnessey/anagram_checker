@@ -18,6 +18,17 @@ describe('Anagram#anagram_checker') do
     expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
   end
 
+  it('will check if two words are anagrams regardless of spaces and punctuation') do
+    anagram = Anagram.new("The Morse Code", "Here come dots!")
+    expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
+  end
+
+  it('will check if two words are antigrams regardless of spaces, case and punctuation') do
+    anagram = Anagram.new("B y E", "Hi!")
+    expect(anagram.anagram_checker).to(eq("These words are antigrams!"))
+  end
+
+
 
   # it('will check if two words are an anagram regardless of case and filter out words with no vowels') do
   #   anagram = Anagram.new("BcD", "cBd")
@@ -30,10 +41,6 @@ describe('Anagram#anagram_checker') do
   #   expect(anagram.vowel_checker).to(eq("You need to input real words!"))
   # end
 
-  # it('will check if two words are anagrams regardless of spaces and punctuation') do
-  #   anagram = Anagram.new("The Morse Code", "Here come dots!")
-  #   expect(anagram.anagram_checker).to(eq("These words are anagrams!"))
-  # end
 
   # it('will check if two words are antigrams regardless of spaces and punctuation') do
   #   anagram = Anagram.new("Hey hEy", "cooL CoOl")

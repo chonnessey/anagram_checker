@@ -10,6 +10,8 @@ class Anagram
         anagram_str = "You need to input real words!"
       elsif @word1.split('').sort == @word2.split('').sort
         anagram_str = "These words are anagrams!"
+      elsif @word1.split('').sort.to_s.match?(@word2.split('').sort.to_s)
+        anagram_str = "These words are antigrams!"
       # elsif vowel_checker() == "You need to input real words!"
       #   anagram_str = "These phrases are anagrams.. but you need to input real words!"
       end
