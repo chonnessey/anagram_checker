@@ -11,6 +11,4 @@ input2 = gets.chomp
 ana_v_anti = Anagram.new("#{input1}", "#{input2}")
 
 ava_v_anti.anagram_checker()
-ava_v_anti.antigram_checker()
-ava_v_anti.vowel_checker()
 

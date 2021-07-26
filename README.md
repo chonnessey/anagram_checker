@@ -26,7 +26,7 @@
 ---
 ### Test Suite/Specification :chart_with_upwards_trend:
 
-> See [anagram_spec.rb](https://github.com/chonnessey/anagram_checker/blob/main/spec/anagram_spec.rb) for rspec test suite which includes 5 passing tests. View test results from project directory by running `rspec`.
+> See [anagram_spec.rb](https://github.com/chonnessey/anagram_checker/blob/main/spec/anagram_spec.rb) for rspec test suite which includes 6 passing tests. View test results from project directory by running `rspec`.
 ---
 ### Contact Info :inbox_tray:
 
